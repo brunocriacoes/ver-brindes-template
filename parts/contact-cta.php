@@ -1,0 +1,1 @@
+<section id="contato" class="contact"><div class="container contact-inner"><div><p class="eyebrow">VAMOS CRIAR JUNTOS?</p><h2>Seu próximo brinde<br>começa <em>aqui.</em></h2></div><a data-contact href="<?php echo esc_url( vb_whatsapp() ); ?>" class="button whatsapp-cta"><i class="fa-brands fa-whatsapp"></i> Falar com um consultor <span>→</span></a></div></section>

@@ -1,0 +1,30 @@
+
+/* Gutenberg content and article navigation. */
+.entry-content, .post-meta {line-height: 1.75; overflow-wrap: anywhere;}
+.entry-content :where(h2, h3, h4) {font-family: var(--serif); margin-block: 1.35em .5em; line-height: 1.12;}
+.entry-content h2 {font-size: clamp(1.8rem, 4vw, 3rem);}
+.entry-content :where(img, video), .entry-cover {max-width: 100%; height: auto;}
+.entry-content iframe {max-width: 100%;}
+.entry-content pre {overflow-x: auto;}
+.entry-content a, .post-meta a {color: var(--purple2);}
+.entry-content .wp-block-button__link {color: #fff; background: var(--purple);}
+.entry-cover {display: block; margin: 26px auto; border-radius: 8px;}
+.institutional {padding-block: clamp(3rem, 8vw, 7rem);}
+.entry-content .alignwide {width: min(100%, 1050px);}
+.entry-content .aligncenter {margin-inline: auto;}
+.entry-content .wp-block-table {overflow-x: auto;}
+.post-meta {display: flex; flex-wrap: wrap; gap: 8px 18px; color: var(--muted); font-size: .78rem;}
+.article-actions, .share {display: flex; align-items: center; flex-wrap: wrap; gap: 10px;}
+.article-actions {justify-content: space-between; margin-top: 36px;}
+.share span {font-size: .73rem; font-weight: 800;}
+.share a {display: grid; place-items: center; text-decoration: none; font-size: .86rem;}
+.share a:hover, .pagination a:hover {color: var(--purple2);}
+.related-grid {display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px;}
+.pagination {margin-top: 24px;}
+.pagination .nav-links {display: flex; flex-wrap: wrap; gap: 8px;}
+.page-numbers {padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; text-decoration: none; color: var(--ink);}
+.page-numbers.current {background: var(--purple); color: #fff;}
+.missing .button {margin-top: 20px;}
+@media (max-width: 760px) {
+    .related-grid {grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;}
+}

@@ -1,0 +1,4 @@
+
+.editor-styles-wrapper {font-family: Manrope, sans-serif; color: #231c28;}
+.editor-styles-wrapper :where(h1, h2, h3, h4) {font-family: Outfit, sans-serif; line-height: 1.12;}
+.editor-styles-wrapper .wp-block-button__link {background: #6d3c82; color: #fff;}

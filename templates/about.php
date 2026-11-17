@@ -1,0 +1,13 @@
+<?php
+/* Template Name: Sobre a Ver Brindes */
+get_header();
+?>
+<main id="conteudo" tabindex="-1">
+<?php while ( have_posts() ) : the_post(); ?>
+<?php if ( trim( get_the_content() ) ) : ?>
+    <div class="container entry-content institutional"><?php the_content(); wp_link_pages(); ?></div>
+<?php else : ?>
+<section class="about-hero"><div class="about-hero-shade"></div><div class="container"><p class="eyebrow">SOBRE A VER BRINDES</p><h1>Ideias que ganham forma<br>e <em>ficam na memória.</em></h1><p>Mais que produtos personalizados, criamos experiências que aproximam pessoas, celebram histórias e deixam marcas por onde passam.</p></div></section><section id="historia" class="about-story"><div class="container about-story-grid"><div class="about-image"><img src="<?php echo esc_url( vb_asset( 'kit-caneca-toalha-chocolate-01.jpeg' ) ); ?>" alt="Kit personalizado produzido pela Ver Brindes"><span>feito para presentear</span></div><div><p class="eyebrow">NOSSA HISTÓRIA</p><h2>Um jeito mais próximo<br>de fazer <em>brindes.</em></h2><p>A Ver Brindes nasceu para atender as necessidades de cada cliente com atenção genuína, agilidade e cuidado em cada detalhe. Acreditamos que personalizar é transformar uma intenção em algo que se vê, se toca e se lembra.</p><p>Trabalhamos com produtos promocionais e presentes personalizados para que empresas, eventos e pessoas possam comunicar o que sentem de um jeito único — sem abrir mão da qualidade.</p><a class="text-link" href="#valores">Conheça nosso jeito de fazer <span>→</span></a></div></div></section><section id="valores" class="about-values"><div class="container"><p class="eyebrow">O QUE NOS MOVE</p><h2>Por trás de cada brinde,<br>existe uma <em>boa intenção.</em></h2><div class="values-grid"><article><i class="fa-regular fa-heart"></i><h3>Feito com atenção</h3><p>Ouvimos cada ideia para encontrar uma solução que represente de verdade quem você é.</p></article><article><i class="fa-solid fa-wand-magic-sparkles"></i><h3>Personalização que encanta</h3><p>Transformamos referências, mensagens e identidades em presentes cheios de significado.</p></article><article><i class="fa-solid fa-bolt"></i><h3>Rapidez com qualidade</h3><p>Trabalhamos com agilidade, sem perder o cuidado que um produto feito para surpreender merece.</p></article></div></div></section><section class="about-manifest"><div class="container"><p class="eyebrow">VER BRINDES</p><blockquote>“A melhor lembrança é aquela que faz alguém sorrir e lembrar de você.”</blockquote><a href="<?php echo esc_url( vb_whatsapp() ); ?>" class="button whatsapp-cta"><i class="fa-brands fa-whatsapp"></i> Falar com um consultor <span>→</span></a></div></section>
+<?php endif; endwhile; ?>
+</main>
+<?php get_footer(); ?>
